@@ -17,10 +17,12 @@
 --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache</groupId>
-        <artifactId>apache</artifactId>
-        <version>19</version>
+      <groupId>io.yields</groupId>
+      <artifactId>yields-parent</artifactId>
+      <version>1</version>
+      <relativePath>io.yields.pom.xml</relativePath>
     </parent>
+
     <groupId>org.apache.ranger</groupId>
     <artifactId>ranger</artifactId>
     <version>1.1.0</version>
@@ -280,6 +282,13 @@
         </repository>
     </distributionManagement>
     <repositories>
+      <repository>
+        <id>nexus.yields.io</id>
+        <url>https://nexus.yields.io/repository/yields-central/</url>
+      </repository>
+    </repositories>
+<!--
+    <repositories>
         <repository>
             <id>apache.snapshots.https</id>
             <name>Apache Development Snapshot Repository</name>
@@ -299,7 +308,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <!--
     <repository>
       <id>repo</id>
       <url>file://${basedir}/local-repo</url>
@@ -307,8 +315,8 @@
          <enabled>true</enabled>
       </snapshots>
   </repository>
-  -->
     </repositories>
+  -->
     <dependencyManagement>
         <dependencies>
             <dependency>
