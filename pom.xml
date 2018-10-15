@@ -533,6 +533,7 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
@@ -559,6 +560,7 @@
                     </excludeRoots>
                 </configuration>
             </plugin>
+          -->
             <plugin>
                 <groupId>org.apache.rat</groupId>
                 <artifactId>apache-rat-plugin</artifactId>
